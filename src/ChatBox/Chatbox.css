@@ -1,0 +1,37 @@
+/* ChatBox.css */
+.chatbox-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000; /* Ensure it appears above other content */
+}
+
+.chatbox-toggle {
+  background-color: #6f73a6; /* Or any color you prefer */
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.chatbox-toggle svg {
+  color: white;
+  width: 30px;
+  height: 30px;
+}
+
+.chatbox-dialog {
+  position: fixed;
+  bottom: 80px; /* Adjust if necessary to avoid overlap with toggle button */
+  right: 20px;
+  width: 400px; /* Adjust width as necessary */
+  height: 500px; /* Adjust height as necessary */
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000; /* Ensure it appears above other content */
+}

@@ -1,0 +1,11 @@
+.calendar-widget{
+    width: 80%;
+    height: 15rem;
+    display: block;
+    padding: auto;
+}
+.cheading{
+    margin-top: -30px;
+    height: 5%;
+    font-size: 0.8rem;
+}

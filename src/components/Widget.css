@@ -1,0 +1,41 @@
+.widget {
+  background-color: rgb(15, 15, 15);
+  border: 2px solid rgb(15, 15, 15);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 5px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+}
+
+.widget:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.widget h2 {
+  font-size: 1.5rem;
+  color: var(--font-color);
+}
+
+.widget button {
+  background-color: var(--highlight-color);
+  color: var(--font-color);
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.widget button:hover {
+  background-color: darken(var(--highlight-color), 10%);
+}
+
+.widget-icon {
+  font-size: 24px;
+  color: var(--font-color);
+  margin-right: 10px;
+}

@@ -1,0 +1,81 @@
+:root {
+  --background-color: #000000;
+  --widget-background: #333;
+  /* --widget-border: #444;
+  --widget-border-radius: 10px; */
+  --widget-padding: 20px;
+  --widget-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --font-color: #fff;
+  --highlight-color: #501332;
+}
+
+body {
+  margin: 0;
+  background-color: var(--background-color);
+  font-family: var(--font-family);
+  color: var(--font-color);
+}
+
+.app-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: baseline;
+  overflow: hidden;
+}
+
+.widget-group {
+  margin: 20px;
+  margin-top: 50px;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-around; */
+  width: 100%;
+}
+
+
+
+.widget-row {
+  display: flex;
+  justify-content: space-around;
+  background-color: #070707;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  padding-top: 30px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.widget-col {
+  width: 20%;
+  box-sizing: border-box;
+}
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the app takes at least the full viewport height */
+}
+
+.content {
+  flex: 1; /* Take up remaining space, pushing footer to the bottom */
+}
+
+/*
+.widget-large {
+  flex: 1;
+}
+
+.widget-small {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .widget-row {
+    flex-direction: column;
+    align-items: center;
+  }
+} */

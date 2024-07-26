@@ -1,0 +1,79 @@
+/* navbar.css */
+.navbar {
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    position: fixed;  /* Makes the navbar stay on top */
+    width: 100%;      /* Ensures the navbar spans the full width */
+    top: 0;           /* Positions the navbar at the top of the page */
+    z-index: 1000;    /* Ensures the navbar is above other elements */
+  }
+  
+  .navbar-logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-logo a {
+    margin-right: 1rem;
+  }
+  
+  .navbar-logo img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .navbar-center {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navbar-search {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-search form {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-search input[type="text"] {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+    width: 400px; 
+  }
+  
+  .navbar-search button {
+    padding: 0.5rem;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .navbar-search button .fa-search {
+    font-size: 1rem;
+    color: #fff;
+  }
+  
+  .navbar-search input[type="text"]::placeholder {
+    color: #aaa;
+    
+
+  }
+  
+  .navbar-logo, .navbar-search {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  
